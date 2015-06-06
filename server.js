@@ -1,6 +1,6 @@
 var express=require('express');
 var nodemailer = require("nodemailer");
-var serveStatic = require('serve-static')
+var static = require("serve-static");
 var app=express();
 
 
