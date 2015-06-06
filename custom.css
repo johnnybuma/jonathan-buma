@@ -11,6 +11,14 @@ body {
 	margin-bottom: 100px;
 }
 
+ul, li {
+  display: inline;
+}
+
+.box-margins {
+  margin: 15px;
+  margin-right: 40px;
+}
 
 .row-head {
 	height: 150px;
@@ -29,6 +37,15 @@ body {
 	font-weight: 700;
 }
 
+.row-foot {
+  text-align: center;
+}
+
+li {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
 
 #name {
 	font-size: 65px;
@@ -37,6 +54,13 @@ body {
 
 #sub-title {
 
+}
+
+address {
+  display: block;
+  text-align: center;
+  font-size: 35px;
+  line-height: 2.0;
 }
 
 p {
@@ -81,9 +105,10 @@ p {
 		float: left;
 		text-align: left;
 	}
-	#map-canvas {
-		display: none;
-	}
+  #map-canvas {
+    width: 100%;
+  }
+	
 }
 				
 
