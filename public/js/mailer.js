@@ -1,7 +1,9 @@
 $(document).ready(function(){
     var from,to,subject,text;
-    $("#send_email").click(function(){      
-        to=$("#to").val();
+    var to = "johnny.buma@gmail.com";
+    $("#send_email").click(function(){
+        from=$("#from").val();      
+        to= to;
         subject=$("#subject").val();
         text=$("#content").val();
         $("#message").text("Sending E-mail...Please wait");
@@ -10,7 +12,7 @@ $(document).ready(function(){
         {
             $("#message").empty().html
 
-		("Email is been sent at "+to+" . Please check inbox !");
+		(" Your message has been sent, thank you for your interest !");
         }
 
 });
