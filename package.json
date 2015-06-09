@@ -1,9 +1,11 @@
 {
-"name": "email-node",
-"version": "1.0.0",
-"dependencies": {
-"nodemailer": "~0.7.1",
-"express": "~4.5.1",
-"serve-static": "~1.9.3"
-}
+  "name": "email-node",
+  "version": "1.0.0",
+  "dependencies": {
+    "nodemailer": "~0.7.1",
+    "express": "~4.5.1",
+    "serve-static": "~1.9.3",
+    "googleapis": "~2.0.5",
+    "google-auth-library": "~0.9.6"
+  }
 }
