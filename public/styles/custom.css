@@ -9,6 +9,7 @@
 body {
 	font-family: 'Exo 2', sans-serif;
 	margin-bottom: 60px;
+
 }
 
 html {
@@ -47,6 +48,10 @@ a.navbar-brand {
 	font-size: 36px;
 }
 
+.app {
+	display: flex;
+	
+}
 
 
 .footer {

@@ -5,9 +5,9 @@ $(document).ready(function(){
         from=$("#from").val();      
         to= to;
         subject=$("#subject").val();
-        text=$("#content").val();
+        text= "This message was sent from" + " " + $("#from").val() + " " + $("#content").val();
         $("#message").text("Sending E-mail...Please wait");
-        $.get("/send",{to:to,subject:subject,text:text},function(data){
+        $.get("/send",{from:from,to:to,subject:subject,text:text},function(data){
         if(data=="sent")
         {
             $("#message").empty().html

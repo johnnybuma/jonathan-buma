@@ -39,12 +39,16 @@ res.sendfile('index.html');
 
 
 app.get('/send',function(req,res){
+	
 var mailOptions={
+from : req.query.from,	
 to : req.query.to,
 subject : req.query.subject,
 text : req.query.text
 }
+
 console.log(mailOptions);
+
 smtpTransport.sendMail(mailOptions, function(error, response){
 if(error){
 console.log(error);
