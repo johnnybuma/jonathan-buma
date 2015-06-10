@@ -36,6 +36,12 @@ a.navbar-brand {
 }
 
 
+img.img-responsive:hover {
+	cursor: pointer;
+	opacity: 0.5;
+	filter:alpha(opacity=100);
+	
+}
 /*.footer {
   position: absolute;
   bottom: 0;
@@ -220,3 +226,4 @@ p {
 label {
 	float: top;
 }
+
