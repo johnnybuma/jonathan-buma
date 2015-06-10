@@ -205,4 +205,18 @@ p {
 }
 
 
+#from-error {
+	color: red;
+}
 
+#subject-error {
+	color: red
+}
+
+#content-error {
+	color: red;
+}
+
+label {
+	float: top;
+}

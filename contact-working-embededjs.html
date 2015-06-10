@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Jonathan Buma - Front-End Web Developer</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/public/styles/custom.css">
+        <link rel="stylesheet" href="/public/styles/bootstrap-social.css">
+        <link href='https://fonts.googleapis.com/css?family=Exo+2:700,200italic,200,100' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="/public/styles/navbar.css">
+        <link rel="stylesheet" href="/public/styles/sticky-footer.css">
+        <!--<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>-->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.js"></script>
+        <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/additional-methods.js"></script>
+        <!--<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>-->
+        <!--<script src="/public/js/mailer.js"></script>-->
+        <!--<script src="/public/js/maps.js"></script>-->
+        
+
+    </head>
+
+	<body>
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/index.html">&lt;johnny/b&gt;</a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="/about.html">About</a></li>
+              <li class="active"><a href="/contact.html">Contact</a></li>
+              
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+            <li class="socal"><a href="https://github.com/johnnybuma" class="btn btn-social-icon btn-md btn-github" id="socialnav" onclick="_gaq.push(['_trackEvent', 'btn-social-icon', 'click', 'btn-md']);"><i class="fa fa-github"></i></a></li>
+            <li class="socal"><a href="https://www.linkedin.com/in/jonathanbuma" class="btn btn-social-icon btn-md btn-linkedin" onclick="_gaq.push(['_trackEvent', 'btn-social-icon', 'click', 'btn-md']);"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+      </nav>  
+  <div class="row head-space"></div>
+  <header id="header">
+    <div class="container">
+      <div class="row row-head">
+        
+        <div class=" col-md-12 head-title">
+          <h1 id="name">Front-End Web Developer</h1>
+          
+          
+        </div>
+      </div>
+      <div class="row"></div>
+      <hr>
+    </div>  
+  </header>
+
+  <div class="container mid">
+
+    <div class="row">
+      <h2 class="contact-title">Contact</h2>
+      <hr>
+      <div class="col-md-6">
+        <form class="cmxform" id="contactForm" method="get" action="">
+              <input class="form-control" id="from" name="email" type="email" placeholder="E-mail" required/>
+              <input class="form-control" id="subject" name="subject" type="text" placeholder="Subject" required/>
+              <textarea class="form-control" id="content" name="message" type="text" cols="40" rows="5" placeholder="Message" required></textarea>
+              <button class="btn btn-default submit" id="send_email" type="submit" value="Submit">Send Email</button>
+              <span class="form-control" id="message"></span>
+        </form>
+        <script>
+        jQuery.validator.setDefaults({
+          debug: true,
+          success: "valid"
+        });
+        var form = $( "#contactForm" );
+        form.validate();
+        //$( "button" ).click(function() {
+          //alert( "Valid: " + form.valid() );
+        $("#send_email").click(function(){  
+          if (form.valid()) {
+                //$(document).ready(function(){
+                  var from,to,subject,text;
+                  var to = "johnny.buma@gmail.com";
+                  //$("#send_email").click(function(){
+                      from=$("#from").val();      
+                      to= to;
+                      subject=$("#subject").val();
+                      text= "This message was sent from" + " " + $("#from").val() + " " + $("#content").val();
+                      $("#message").text("Sending E-mail...Please wait");
+                      $.get("/send",{from:from,to:to,subject:subject,text:text},function(data){
+                      if(data=="sent")
+                      {
+                          $("#message").empty().html
+
+                      (" Your message has been sent, thank you for your interest !");
+                      }
+                  });
+                //});
+              //});
+          }
+        });
+        </script> 
+      </div>           
+      <div class="col-md-6 info">
+        <address>
+          1320 E Fairgrove Ave<br>
+          West Covina, CA 91792<br>
+          P: (801) 673-7144<br>
+          E: <a href="mailto: johnny.buma@gmail.com">johnny.buma@gmail.com</a>
+        </address>  
+      </div>
+    </div>
+    <!--<div class="row map-row">
+    <h4>Serving the Greater Los Angeles Area</h4>
+    <hr>
+      <div class="col-md-2"></div>
+      <div class="col-md-8  box-margins" id="map-canvas"></div>
+      <div class="col-md-2"></div>
+    </div>-->
+  </div>  
+
+  </div>
+	
+  
+
+  <footer class="footer">
+    <div class="container" id="foot">
+      <ul>
+        <li class="no-small"><a href="tel: +8016737144">(801) 673-7144</a></li>
+        <li class="no-small"> | </li>
+        <li class="no-small"><a href="mailto: johnny.buma@gmail.com">johnny.buma@gmail.com</a></li>
+        <li class="pull-right"><a href="https://github.com/johnnybuma" class="btn btn-social-icon btn-md btn-github" id="socialnav" onclick="_gaq.push(['_trackEvent', 'btn-social-icon', 'click', 'btn-md']);"><i class="fa fa-github"></i></a></li>
+        <li class="pull-right"><a href="https://www.linkedin.com/in/jonathanbuma" class="btn btn-social-icon btn-md btn-linkedin" onclick="_gaq.push(['_trackEvent', 'btn-social-icon', 'click', 'btn-md']);"><i class="fa fa-linkedin"></i></a></li>
+      </ul>
+    </div>  
+  </footer>
+  </body>
+</html>
