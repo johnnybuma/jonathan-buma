@@ -39,7 +39,6 @@ a.navbar-brand {
 img.img-responsive:hover {
 	cursor: pointer;
 	opacity: 0.5;
-	filter:alpha(opacity=100);
 	
 }
 /*.footer {
@@ -69,7 +68,6 @@ img.img-responsive:hover {
 
 .head-title {
 	float: right;
-	float: bottom;
 	text-align: right;
 }
 
@@ -223,7 +221,9 @@ p {
 	color: red;
 }
 
-label {
-	float: top;
+#portrait {
+	float: left;
+	width: 300px;
+	height: 300px;
 }
 
