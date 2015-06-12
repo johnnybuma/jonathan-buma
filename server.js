@@ -13,8 +13,8 @@ SMTP Server Configuration.
 var smtpTransport = nodemailer.createTransport("SMTP",{
 service: "Gmail",
 auth: {
-user: "test@mail.com",
-pass: "password"
+user: process.env.GMAIL_USERNAME,
+pass: process.env.GMAIL_PASSWORD
 }
 });
 /*------------------SMTP Over-----------------------------*/
