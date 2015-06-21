@@ -1,0 +1,165 @@
+/*span {
+	color: #343535;
+}
+*/
+a {
+	/*color: #343535;*/
+	color: white;
+}
+
+p {
+	color: white;
+}
+
+body {
+	height: 100%;
+	background-image: url("/public/img/back.png");
+  	background-repeat: no-repeat;
+  	background-size: 100% 100%;
+  	background-attachment: fixed;
+  	background-position: center;
+}
+
+#header {
+	padding-right: 5%;
+	padding-left: 5%;
+}
+
+.transback {
+	background-color: rgba(0,0,0,0.0);
+}
+
+/*.col-lg-6 {
+	overflow: auto;
+	text-align: center;
+	margin: 10px;
+	padding: 10px;
+	max-width: 40%;
+}
+*/
+.container {
+	width: 100%;
+	
+}
+
+.flex-item {
+	display: inline-block;
+}
+
+.date-text {
+	padding-right: 10px;
+}
+
+.role {
+	float: right;
+}
+
+/*a {
+	padding-bottom: 10px;
+}
+*/
+
+@media screen and (max-width: 347px) {
+    .role {
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 405px) {
+	h1 {
+		font-size: 35px;
+	}
+	.role {
+		font-size: 16px;
+	}
+
+}
+
+@media screen and (max-width: 440px and min-width: 406px) {
+	.role {
+		font-size: 20px;
+	}
+}
+
+@media screen and (max-width: 470px) {
+	
+}
+
+@media screen and (max-width: 495px) {
+	#letsConnect {
+		text-align: left;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	#letsConnect {
+		margin-top: 100px;
+	}
+}
+
+@media screen and (max-width: 560px) {
+	#title {
+		display: inline;
+	}
+}
+
+@media screen and (max-width: 750px) {
+	.flex-item {
+		display: block;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.role {
+		float: left;
+	}
+	#role {
+		float: left;
+		text-align: left;
+	}
+}
+
+#title {
+	padding-top: 25px;
+}
+#role span {
+	float: right;
+	padding-top: 30px;
+	font-size: 30px;
+}
+
+.col-lg-6 {
+
+	padding: 15px;
+}
+
+.row {
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+span.welcome-message {
+	float: right;
+}
+
+.location-text {
+	padding-right: 15px;
+}
+
+.grayback {
+	background-color: rgba(134,142,142,0.5);
+	padding-right: 5%;
+	padding-left: 5%;
+
+}
+
+#education {
+	color: white;
+	padding-bottom: 30px;
+}
+
+#mapRow {
+	padding-bottom: 75px;
+}
+
+#topContacts {
+    float: left;
