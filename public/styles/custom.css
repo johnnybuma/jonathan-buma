@@ -13,6 +13,10 @@ ul, li {
   display: inline;
 }
 
+a:hover {
+	color: #5EBFFF;
+}
+
 .container-fluid {
 	max-width: 1170px;
 }
@@ -154,6 +158,13 @@ p {
 	
 }
 
+@media screen and (max-width: 767px) {
+	.navbar-right {
+		display: flex;
+		padding-left: 20px;
+	}
+}
+
 @media screen and (max-width: 695px) {
 	.head-title {
 		text-align: center;
@@ -227,3 +238,6 @@ p {
 	height: 300px;
 }
 
+div#foot.container a {
+	color: white;
+}

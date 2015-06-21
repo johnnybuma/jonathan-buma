@@ -29,6 +29,8 @@ body {
 	background-color: rgba(0,0,0,0.0);
 }
 
+
+
 /*.col-lg-6 {
 	overflow: auto;
 	text-align: center;
@@ -59,7 +61,7 @@ body {
 }
 */
 
-@media screen and (max-width: 347px) {
+@media screen and (min-width: 404px and  max-width: 347px) {
     .role {
         font-size: 12px;
     }
@@ -80,9 +82,7 @@ body {
 	}
 }
 
-@media screen and (max-width: 470px) {
-	
-}
+
 
 @media screen and (max-width: 495px) {
 	#letsConnect {
@@ -102,7 +102,7 @@ body {
 	}
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 850px) {
 	.flex-item {
 		display: block;
 	}
@@ -163,3 +163,15 @@ span.welcome-message {
 
 #topContacts {
     float: left;
+    text-align: left;
+    padding-left: 0px;
+}
+#footerContacts {
+	padding: 0;
+}
+
+div#foot.container a {
+	color: white;
+}
+
+
