@@ -102,7 +102,7 @@ body {
 	}
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 650px) {
 	.flex-item {
 		display: block;
 	}
@@ -170,8 +170,8 @@ span.welcome-message {
 	padding: 0;
 }
 
-div#foot.container a {
-	color: white;
+#skills {
+	text-align: center;
 }
 
 
