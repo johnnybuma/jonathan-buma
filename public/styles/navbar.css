@@ -10,8 +10,15 @@ body {
 }
 
 a.navbar-brand {
+	color: white !important;
 	font-size: 36px;
 }
+
+a.navbar-brand:hover {
+	color: #5EBFFF !important;
+}
+
+
 
 .socal {
 	color: white;
@@ -21,16 +28,28 @@ a.navbar-brand {
 	margin-top: 10px;
 	display: inline;
 }
-.navbar-default {
+/*.navbar-default {
 	background-color: white;
 	border-color: black;
 }
+*/
+
+.navbar-default {
+	background-color: #575C5C;
+	
+}
 
 .navbar-default .navbar-nav>li>a {
-	background-color: #FFF;
+	background-color: #575C5C;
+	color: white;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+	color: #5EBFFF;
 }
 
 .navbar-right {
 	padding-right: 45px;
 }
+
 

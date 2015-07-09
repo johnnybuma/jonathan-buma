@@ -1,5 +1,11 @@
 body {
 	font-family: 'Exo 2', sans-serif;
+	height: 100%;
+	background-image: url("/public/img/back.png");
+  	background-repeat: no-repeat;
+  	background-size: 100% 100%;
+  	background-attachment: fixed;
+  	background-position: center;
 
 }
 
@@ -11,6 +17,14 @@ html {
 ul, li {
 
   display: inline;
+}
+
+address {
+	color: white;
+}
+
+h2 {
+	color: #5EBFFF;
 }
 
 a:hover {
@@ -94,6 +108,7 @@ li {
 
 #name {
 	font-size: 55px;
+	color: white;
 
 }
 
@@ -241,3 +256,12 @@ p {
 div#foot.container a {
 	color: white;
 }
+
+.text-muted {
+	color: #5EBFFF;
+}
+
+.nav {
+	font-size: 28px;
+}
+
