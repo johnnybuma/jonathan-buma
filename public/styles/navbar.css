@@ -52,8 +52,8 @@ a.navbar-brand:hover {
 	padding-right: 45px;
 }
 
-.container-fluid {
-	margin: 0;
+.container {
+	margin: auto;
 }
 
 
