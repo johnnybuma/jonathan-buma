@@ -7,6 +7,7 @@ body {
   	background-attachment: fixed;
   	background-position: center;
 	overflow-x: hidden;
+	width: 100%;
 
 }
 
@@ -266,3 +267,6 @@ div#foot.container a {
 	font-size: 28px;
 }
 
+#projects {
+	margin-bottom: 100px;
+}
