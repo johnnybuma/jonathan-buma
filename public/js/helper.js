@@ -47,7 +47,7 @@ var HTMLschoolName = '<div class="col-lg-12"><a class="a-title" href="#">%data%<
 var HTMLschoolDates = '<div class="date-text">%data%</div>';
 var HTMLschoolLocation = '<div class="location-text">%data%</div>';
 var HTMLschoolMajor = '<div class="col-lg-12">Major: %data%</div>';
-var HTMLschoolDegree = '<div class="col-lg-12"> %data%</div>';
+var HTMLschoolDegree = '<div class="col-lg-12">Degree: %data%</div>';
 
 
 var HTMLonlineClasses = '<h3>Online Classes</h3>';
