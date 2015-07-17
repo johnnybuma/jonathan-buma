@@ -174,4 +174,9 @@ span.welcome-message {
 	text-align: center;
 }
 
+#main-content {
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
 

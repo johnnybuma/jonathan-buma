@@ -6,11 +6,11 @@ var bio = {
 		"email": "<a href=\"mailto:johnny.buma@gmail.com\">johnny.buma@gmail.com</a>",
 		"github": "<a href=\"https://github.com/johnnybuma\">johnnybuma</a>",
 		"linkedin": "<a href=\"https://linkedin.com/in/jonathanbuma\">jonathanbuma</a>",
-		"location": "West Covina, California"
+		"location": "West Covina, California 91792"
 	},
 	"WelcomeMsg": "Master of Front-end development and all things JavaScript",
 	"skills": [
-		"HTML5", "CSS3", "JavaScript", "jQuery",  "Node.js", "Express.js", "Angular.js", "Bootstrap3", "WordPress"
+		"HTML5", "CSS3", "JavaScript", "jQuery",  "Node.js", "Express.js", "Angular.js", "Bootstrap3", "WordPress", "Ruby on Rails", "Version Control (Git)"
 	],
 	"bioPic": "images/me.jpg"
 };
@@ -21,7 +21,7 @@ var work = [
 		"title": "Front-end Web Developer",
 		"dates": "May 2014 - Present",
 		"location": "Los Angeles, California",
-		"description": "I have been independently studying and practicing web development since 2012. In May of 2014 I was given the opportunity to leave my previous career as a commercial electrician to refine my skills and focus my career on web development. I am currently available to consider full-time employment opportunities."
+		"description": "I have been independently studying programming since 2012. In May of 2014 I was given the opportunity to leave my career as a commercial electrician and return to school full time to obtain a Bachelor of Science in Software Engineering. I will graduate in the spring of 2020."
 	},
 	{
 		"employer": "Accord Electric Corp",
@@ -36,23 +36,18 @@ var work = [
 var projects = [
 	
 	{
-		"title": "Foothill Construction",
+		"title": "<a class='a-title' href=\"http://www.foothillconstruction.com\">Foothill Construction</a>",
 		"date": "January 2015",
 		"description": "Designed local marketing page and custom estimating software for general contractor",
-		"image": "images/foothill.jpg"
+		"image": "/public/img/foothill2.png"
 	},
 	{
-		"title": "Green Lifestyles Network",
+		"title": "<a class='a-title' href=\"http://www.greenlifestyles.org\">Green Lifestyles Network</a>",
 		"date": "March 2015",
 		"description": "Working on redevelopment of non-profit Green Media orginizations web presence",
-		"image": "images/gln.jpg"
+		"image": "/public/img/gln-small.png"
 	},
-	{
-		"title": "Dynamic Resume Builder",
-		"date": "In Progress",
-		"description": "Development of open source, dynamic resume builder",
-		"image": "images/resume.jpg" 
-	}
+
 
 
 
@@ -61,26 +56,20 @@ var projects = [
 var education = [
 
 		{
-			"Course": "Front-end Web Development",
-			"School": "Udacity",
-			"Location": "Online",
-			"Dates": "June 2015 - Present",
-			"Credential": "Nano Degree"
+			"Course": "Mathematics",
+			"School": "Mt. San Antonio College",
+			"Location": "Walnut, CA",
+			"Dates": "August 2015 - June 2017",
+			"Credential": "Associate of Science"
 		},
 		{
-			"Course": "Introduction to CS and Programming Using Python",
-			"School": "MITx",
-			"Location": "Online",
-			"Dates": "June 2013 - December 2013",
-			"Credential": "Certificate"
+			"Course": "Software Engineering",
+			"School": "University of California, Irvine",
+			"Location": "Irvine, CA",
+			"Dates": "August 2017 - June 2020",
+			"Credential": "Bachelor of Science"
 		},
-		{
-			"Course": "Introduction to Computer Science",
-			"School": "MITx",
-			"Location": "Online",
-			"Dates": "January 2014 - July 2014",
-			"Credential": "Certificate"
-		}
+
 
 ];
 
@@ -147,7 +136,8 @@ projects.display = function () {
 		$(".project-entry:last").append(formattedProjectDate);
 		var formattedProjectDescription = HTMLprojectDescription.replace("%data%",projects[i].description);
 		$(".project-entry:last").append(formattedProjectDescription);
-
+		var formattedProjectImage = HTMLprojectImage.replace("%data%",projects[i].image);
+		$(".project-entry:last").append(formattedProjectImage);
 		//TODO: Add code for project images to be displayed if available!!
 	}
 
