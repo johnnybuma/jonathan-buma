@@ -111,7 +111,12 @@ function initializeMap() {
   var locations;
 
   var mapOptions = {
-    disableDefaultUI: true
+    disableDefaultUI: true,
+    zoomControl: false,
+    navigationControl: false,
+    scaleControl: false,
+    draggable: false,
+    scrollwheel: false
   };
 
   // This next line makes `map` a new Google Map JavaScript Object and attaches it to
