@@ -7,11 +7,12 @@ body {
   	background-attachment: fixed;
   	background-position: center;
 	overflow-x: hidden;
-	width: 98%;
+	width: 100%;
+	margin-right: 0;
 }
 
 #wrap {
-	margin: auto;
+	margin-right: 0;
 	width: 100%;
 
 }
