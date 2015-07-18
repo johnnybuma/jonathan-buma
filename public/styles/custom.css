@@ -1,18 +1,16 @@
 body {
 	font-family: 'Exo 2', sans-serif;
 	height: 100%;
+	min-width: 100% !important;
 	background-image: url("/public/img/back.png");
   	background-repeat: no-repeat;
   	background-size: 100% 100%;
   	background-attachment: fixed;
   	background-position: center;
 	overflow-x: hidden;
-	width: 100%;
-	margin-right: 0;
 }
 
 #wrap {
-	margin-right: 0;
 	width: 100%;
 
 }
@@ -20,6 +18,7 @@ body {
 html {
 	position: relative;
 	min-height: 100%;
+	min-width: 100% !important;
 }
 
 ul, li {
@@ -275,4 +274,8 @@ div#foot.container a {
 
 #projects {
 	margin-bottom: 100px;
+}
+
+.img-responsive {
+	min-width: 100%;
 }
