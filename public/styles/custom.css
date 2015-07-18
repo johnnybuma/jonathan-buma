@@ -5,7 +5,6 @@
 body {
 	font-family: 'Exo 2', sans-serif;
 	height: 100%;
-	max-width: inherit !important;
 	background-image: url("/public/img/back.png");
   	background-repeat: no-repeat;
   	background-size: 100% 100%;
@@ -23,7 +22,6 @@ body {
 html {
 	position: relative;
 	min-height: 100%;
-	max-width: 100% !important;
 	overflow-x: hidden;
 }
 
@@ -280,8 +278,4 @@ div#foot.container a {
 
 #projects {
 	margin-bottom: 100px;
-}
-
-.img-responsive {
-	min-width: 100%;
 }
